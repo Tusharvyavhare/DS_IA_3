@@ -48,3 +48,40 @@ Hash function:
 3. Handle collisions using Linear Probing.
 4. Compare manual calculations with actual program output.
 5. Understand incremental project development.
+## Algorithm
+
+1. Initialize all hash table positions as empty.
+2. Read the 20 personalized values.
+3. Calculate the hash index using `key % 23`.
+4. Check whether the calculated index is empty.
+5. If occupied, use Linear Probing to find the next available position.
+6. Insert the value into the available position.
+7. Repeat until all values are inserted.
+8. Display the final hash table.
+
+## Compilation and Execution
+
+Compile the program using:
+
+bash
+g++ hash_table.cpp -o hash_table
+
+Execute the program:
+
+bash
+./hash_table
+
+For Windows:
+
+bash
+hash_table.exe
+
+## Time Complexity
+
+- Average insertion: O(1), assuming a reasonable load factor.
+- Worst-case insertion: O(n) due to linear probing.
+- Display operation: O(m), where m is the table size.
+
+## Final Result
+
+The project demonstrates successful implementation of a hash table using the Division Method and Linear Probing with 20 personalized values.
